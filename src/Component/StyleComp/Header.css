@@ -27,23 +27,30 @@
      display: flex;
      justify-content: start;
      align-items: center;
-     height: 7rem;
+     width: 56%;
 }
 
 .input_container{
     border: 1px solid grey;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 4px;
+    width: 100%;
+}
+
+.input_container form {
+    width: 100%;
 }
 
 .logo_container{
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .meshologo{
     cursor: pointer;
+    object-fit: cover;
 }
 
 .logo_container a{
@@ -63,13 +70,13 @@
 
 .input_container input[type=text] {
     border: none;
-    width: 36rem;
     height: 3.7rem;
     font-size: 1.5rem;
     letter-spacing: 0.08rem;
     color: rgb(59, 57, 57);
     font-weight: 500;
-    
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 .searchitemcontainer:focus{
@@ -150,27 +157,33 @@
 }
 
 .profile_line:hover{
- color: rgb(159, 32, 137);
-    
-    border-bottom:  solid rgb(159, 32, 137);
-    & a{
-        color: rgb(159, 32, 137);
-        font-weight: 500;
-    }   
+    color: rgb(159, 32, 137);   
+    border-bottom:  solid rgb(159, 32, 137);  
 }
+.profile_line:hover a{
+    color: rgb(159, 32, 137);
+    font-weight: 500;
+} 
 
 .links_download:hover{
     height: 5rem;
-    
     color: rgb(159, 32, 137);
-    
-    border-bottom:  solid rgb(159, 32, 137);
-    & a{
-        color: rgb(159, 32, 137);
-        font-weight: 500;
-    }    
+    border-bottom:  solid rgb(159, 32, 137);   
 }
 
+.links_download:hover a{
+    color: rgb(159, 32, 137);
+    font-weight: 500;
+} 
+
+.links_download a {
+    display: inherit;
+}
+
+.links_download a svg {
+    transform: translate(-4px, 10px);
+    padding: 0 10px;
+}
 .nav_container{
     border-bottom: 0.5px solid rgb(46, 46, 139, 0.3);
     border-right:  none;
